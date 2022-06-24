@@ -18,6 +18,7 @@ phases:
       - echo we are in post_build now.
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - printf '[{"name":"ecscicd","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinition.json
+      - cat imagedefinition.json   
 artifacts:
   files:
     - imagedefination.json
