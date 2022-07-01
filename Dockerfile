@@ -4,7 +4,7 @@ RUN yum update -y \
 && yum install -y httpd  zip unzip 
 COPY  .  /var/www/html/
 WORKDIR /var/www/html
-RUN cp -rvf courses/* /var/www/html
+RUN cp -rvf files/* /var/www/html
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
 
