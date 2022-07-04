@@ -1,0 +1,10 @@
+version: 0.0
+Resources:
+    - TargetService:
+        Type: AWS::ECS::Service
+        Properties:
+          TaskDefinition: "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask:6"
+          LoadBalancerInfo:
+            ContainerName: zohaibecs
+            ContainerPort: 80
+
