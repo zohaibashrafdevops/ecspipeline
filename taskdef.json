@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask:6",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask:13",
   "family": "zohaibtask",
   "requiresAttributes": [
     {
@@ -126,7 +126,7 @@
     "cpuArchitecture": null
   },
   "cpu": "256",
-  "revision": 6,
+  "revision": 13,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
