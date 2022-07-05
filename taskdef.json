@@ -37,7 +37,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": <ImageURI>,
+      "image": "489994096722.dkr.ecr.us-east-1.amazonaws.com/zohaibecs:75d8fa9",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
