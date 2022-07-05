@@ -3,7 +3,7 @@ Resources:
     - TargetService:
         Type: AWS::ECS::Service
         Properties:
-          TaskDefinition: "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask:6"
+          TaskDefinition: "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask:13"
           LoadBalancerInfo:
             ContainerName: zohaibecs
             ContainerPort: 80
