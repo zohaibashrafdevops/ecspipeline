@@ -23,5 +23,6 @@ phases:
 artifacts:
   files:
     - imagedefination.json
+    - taskdef.json
     - '**/*'
 
