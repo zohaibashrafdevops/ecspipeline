@@ -22,7 +22,7 @@ phases:
       - IMAGE=$REPOSITORY_URI:$IMAGE_TAG
       - cat imagedefinition.json
       - echo $IMAGE
-      - sed -i 's/<IMAGE_NAME>/\'$IMAGE'/g' taskdef.json    
+      - sed -i 's/<IMAGE_NAME>/'$REPOSITORY_URI'\:'$IMAGE_TAG'/g' taskdef.json    
 artifacts:
   files:
     - imagedefination.json
