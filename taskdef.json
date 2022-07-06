@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask:13",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:489994096722:task-definition/zohaibtask",
   "family": "zohaibtask",
   "requiresAttributes": [
     {
