@@ -18,7 +18,8 @@ phases:
       - echo we are in post_build now.
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - printf '[{"name":"zohaibecs","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinition.json
-      - cat imagedefinition.json   
+      - cat imagedefinition.json
+      - sed -i 's/<IMAGE_NAME>/'$AWS_ACCOUNT_ID'\.dkr\.ecr\.'$AWS_DEFAULT_REGION'\.amazonaws.com\/'$REPOSITORY_URI'\:'$IMAGE_TAG'/g' taskdef.json    
 artifacts:
   files:
     - imagedefination.json
