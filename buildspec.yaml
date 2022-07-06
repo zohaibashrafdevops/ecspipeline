@@ -18,11 +18,10 @@ phases:
       - echo we are in post_build now.
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - printf '[{"name":"zohaibecs","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinition.json
-      - $REPOSITORY_URI:$IMAGE_TAG > buildimage
-      - cat buildimage
+      - echo $REPOSITORY_URI:$IMAGE_TAG
+      - IMAGE=$REPOSITORY_URI:$IMAGE_TAG
       - cat imagedefinition.json
-      - image=sed -n 1p buildimage
-      - sed -i 's/<IMAGE_NAME>/'$image'/g' taskdef.json    
+      - sed -i 's/<IMAGE_NAME>/'$IMAGE'/g' taskdef.json    
 artifacts:
   files:
     - imagedefination.json
